@@ -1,0 +1,451 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:base="http://www.uni/" > 
+  <rdf:Description rdf:about="http://www.uni/student10">
+    <base:member_of rdf:resource="http://www.uni/department4"/>
+    <base:has_age>20</base:has_age>
+    <base:has_email>dekatosfoithths@mail.com</base:has_email>
+    <base:has_phone>1010100</base:has_phone>
+    <base:has_name>dekatos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom8">
+    <base:room_department rdf:resource="http://www.uni/department4"/>
+    <base:room_capacity>130</base:room_capacity>
+    <base:room_name>aithousa 8</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student7">
+    <base:member_of rdf:resource="http://www.uni/department1"/>
+    <base:has_age>27</base:has_age>
+    <base:has_email>evdomosfoithths@mail.com</base:has_email>
+    <base:has_phone>7777770</base:has_phone>
+    <base:has_name>evdomos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student14">
+    <base:member_of rdf:resource="http://www.uni/department2"/>
+    <base:has_age>24</base:has_age>
+    <base:has_email>dekatostetartosfoithths@mail.com</base:has_email>
+    <base:has_phone>456456456</base:has_phone>
+    <base:has_name>dekatostetartos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom4">
+    <base:room_department rdf:resource="http://www.uni/department2"/>
+    <base:room_capacity>160</base:room_capacity>
+    <base:room_name>aithousa 4</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson2">
+    <base:taught_by rdf:resource="http://www.uni/professor2"/>
+    <base:les_name>mathima 2</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson6">
+    <base:taught_by rdf:resource="http://www.uni/professor6"/>
+    <base:les_name>mathima 6</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/department1">
+    <base:dep_city>Patra</base:dep_city>
+    <base:dep_name>Tmhma Patrwn 1</base:dep_name>
+    <rdf:type rdf:resource="http://www.uni/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor3">
+    <base:teaches rdf:resource="http://www.uni/lesson3"/>
+    <base:member_of rdf:resource="http://www.uni/department3"/>
+    <base:has_age>30</base:has_age>
+    <base:has_email>tritos@mail.com</base:has_email>
+    <base:has_phone>333333</base:has_phone>
+    <base:has_name>tritos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/department5">
+    <base:dep_city>Karditsa</base:dep_city>
+    <base:dep_name>Tmhma Karditsas</base:dep_name>
+    <rdf:type rdf:resource="http://www.uni/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor7">
+    <base:teaches rdf:resource="http://www.uni/lesson7"/>
+    <base:member_of rdf:resource="http://www.uni/department1"/>
+    <base:has_age>47</base:has_age>
+    <base:has_email>evdomos@mail.com</base:has_email>
+    <base:has_phone>777777</base:has_phone>
+    <base:has_name>evdomos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student2">
+    <base:member_of rdf:resource="http://www.uni/department2"/>
+    <base:has_age>22</base:has_age>
+    <base:has_email>deuterosfoithths@mail.com</base:has_email>
+    <base:has_phone>2222220</base:has_phone>
+    <base:has_name>deuteros foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom9">
+    <base:room_department rdf:resource="http://www.uni/department5"/>
+    <base:room_capacity>150</base:room_capacity>
+    <base:room_name>aithousa 9</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student4">
+    <base:member_of rdf:resource="http://www.uni/department4"/>
+    <base:has_age>24</base:has_age>
+    <base:has_email>tetartosfoithths@mail.com</base:has_email>
+    <base:has_phone>4444440</base:has_phone>
+    <base:has_name>tetartos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/member_of">
+    <rdfs:range rdf:resource="http://www.uni/Department"/>
+    <rdfs:domain rdf:resource="http://www.uni/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor8">
+    <base:teaches rdf:resource="http://www.uni/lesson8"/>
+    <base:member_of rdf:resource="http://www.uni/department2"/>
+    <base:has_age>29</base:has_age>
+    <base:has_email>ogdoos@mail.com</base:has_email>
+    <base:has_phone>888888</base:has_phone>
+    <base:has_name>ogdoos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student13">
+    <base:member_of rdf:resource="http://www.uni/department1"/>
+    <base:has_age>23</base:has_age>
+    <base:has_email>dekatostritosfoithths@mail.com</base:has_email>
+    <base:has_phone>345345345</base:has_phone>
+    <base:has_name>dekatostritos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom5">
+    <base:room_department rdf:resource="http://www.uni/department3"/>
+    <base:room_capacity>180</base:room_capacity>
+    <base:room_name>aithousa 5</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student8">
+    <base:member_of rdf:resource="http://www.uni/department2"/>
+    <base:has_age>28</base:has_age>
+    <base:has_email>ogdoosfoithths@mail.com</base:has_email>
+    <base:has_phone>8888880</base:has_phone>
+    <base:has_name>ogdoos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom1">
+    <base:room_department rdf:resource="http://www.uni/department1"/>
+    <base:room_capacity>100</base:room_capacity>
+    <base:room_name>aithousa 1</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor10">
+    <base:teaches rdf:resource="http://www.uni/lesson10"/>
+    <base:member_of rdf:resource="http://www.uni/department4"/>
+    <base:has_age>60</base:has_age>
+    <base:has_email>dekatos@mail.com</base:has_email>
+    <base:has_phone>101010</base:has_phone>
+    <base:has_name>dekatos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/has_email">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.uni/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom12">
+    <base:room_department rdf:resource="http://www.uni/department6"/>
+    <base:room_capacity>210</base:room_capacity>
+    <base:room_name>aithousa 12</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson3">
+    <base:taught_by rdf:resource="http://www.uni/professor3"/>
+    <base:les_name>mathima 3</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson7">
+    <base:taught_by rdf:resource="http://www.uni/professor7"/>
+    <base:les_name>mathima 7</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/department2">
+    <base:dep_city>Patra</base:dep_city>
+    <base:dep_name>Tmhma Patrwn 2</base:dep_name>
+    <rdf:type rdf:resource="http://www.uni/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/room_department">
+    <rdfs:range rdf:resource="http://www.uni/Department"/>
+    <rdfs:domain rdf:resource="http://www.uni/Classroom"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/department6">
+    <base:dep_city>Tripolh</base:dep_city>
+    <base:dep_name>Tmhma Tripolhs</base:dep_name>
+    <rdf:type rdf:resource="http://www.uni/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/Student">
+    <rdfs:subClassOf rdf:resource="http://www.uni/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/has_phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.uni/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student3">
+    <base:member_of rdf:resource="http://www.uni/department3"/>
+    <base:has_age>23</base:has_age>
+    <base:has_email>tritosfoithths@mail.com</base:has_email>
+    <base:has_phone>3333330</base:has_phone>
+    <base:has_name>tritos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor4">
+    <base:teaches rdf:resource="http://www.uni/lesson4"/>
+    <base:member_of rdf:resource="http://www.uni/department4"/>
+    <base:has_age>33</base:has_age>
+    <base:has_email>tetartos@mail.com</base:has_email>
+    <base:has_phone>444444</base:has_phone>
+    <base:has_name>tetartos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student5">
+    <base:member_of rdf:resource="http://www.uni/department5"/>
+    <base:has_age>25</base:has_age>
+    <base:has_email>pemptosfoithths@mail.com</base:has_email>
+    <base:has_phone>5555550</base:has_phone>
+    <base:has_name>pemptos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor9">
+    <base:teaches rdf:resource="http://www.uni/lesson9"/>
+    <base:member_of rdf:resource="http://www.uni/department3"/>
+    <base:has_age>58</base:has_age>
+    <base:has_email>enatos@mail.com</base:has_email>
+    <base:has_phone>999999</base:has_phone>
+    <base:has_name>enatos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student12">
+    <base:member_of rdf:resource="http://www.uni/department6"/>
+    <base:has_age>22</base:has_age>
+    <base:has_email>dwdekatosfoithths@mail.com</base:has_email>
+    <base:has_phone>234234234</base:has_phone>
+    <base:has_name>dwdekatos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student9">
+    <base:member_of rdf:resource="http://www.uni/department3"/>
+    <base:has_age>29</base:has_age>
+    <base:has_email>enatosfoithths@mail.com</base:has_email>
+    <base:has_phone>9999990</base:has_phone>
+    <base:has_name>enatos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/dep_name">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.uni/Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom6">
+    <base:room_department rdf:resource="http://www.uni/department3"/>
+    <base:room_capacity>200</base:room_capacity>
+    <base:room_name>aithousa 6</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom2">
+    <base:room_department rdf:resource="http://www.uni/department1"/>
+    <base:room_capacity>120</base:room_capacity>
+    <base:room_name>aithousa 2</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor99">
+    <base:teaches rdf:resource="http://www.uni/lesson1"/>
+    <base:member_of rdf:resource="http://www.uni/department1"/>
+    <base:has_age>69</base:has_age>
+    <base:has_email>kapipo</base:has_email>
+    <base:has_phone>kipo</base:has_phone>
+    <base:has_name>kapa</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/Lesson">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom11">
+    <base:room_department rdf:resource="http://www.uni/department6"/>
+    <base:room_capacity>190</base:room_capacity>
+    <base:room_name>aithousa 11</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/has_age">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.uni/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/teaches">
+    <rdfs:range rdf:resource="http://www.uni/Lesson"/>
+    <rdfs:domain rdf:resource="http://www.uni/Professor"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson4">
+    <base:taught_by rdf:resource="http://www.uni/professor4"/>
+    <base:les_name>mathima 4</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson8">
+    <base:taught_by rdf:resource="http://www.uni/professor8"/>
+    <base:les_name>mathima 8</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/department3">
+    <base:dep_city>Patra</base:dep_city>
+    <base:dep_name>Tmhma Patrwn 3</base:dep_name>
+    <rdf:type rdf:resource="http://www.uni/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/les_name">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.uni/Lesson"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor1">
+    <base:teaches rdf:resource="http://www.uni/lesson1"/>
+    <base:member_of rdf:resource="http://www.uni/department1"/>
+    <base:has_age>37</base:has_age>
+    <base:has_email>prwtos@mail.com</base:has_email>
+    <base:has_phone>111111</base:has_phone>
+    <base:has_name>prwtos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor5">
+    <base:teaches rdf:resource="http://www.uni/lesson5"/>
+    <base:member_of rdf:resource="http://www.uni/department5"/>
+    <base:has_age>49</base:has_age>
+    <base:has_email>pemptos@mail.com</base:has_email>
+    <base:has_phone>555555</base:has_phone>
+    <base:has_name>pemptos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/taught_by">
+    <rdfs:range rdf:resource="http://www.uni/Professor"/>
+    <rdfs:domain rdf:resource="http://www.uni/Lesson"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student11">
+    <base:member_of rdf:resource="http://www.uni/department5"/>
+    <base:has_age>21</base:has_age>
+    <base:has_email>endekatosfoithths@mail.com</base:has_email>
+    <base:has_phone>123123123</base:has_phone>
+    <base:has_name>endekatos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student6">
+    <base:member_of rdf:resource="http://www.uni/department6"/>
+    <base:has_age>26</base:has_age>
+    <base:has_email>ektosfoithths@mail.com</base:has_email>
+    <base:has_phone>6666660</base:has_phone>
+    <base:has_name>ektos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson10">
+    <base:taught_by rdf:resource="http://www.uni/professor10"/>
+    <base:les_name>mathima 10</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/room_name">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.uni/Classroom"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student15">
+    <base:member_of rdf:resource="http://www.uni/department3"/>
+    <base:has_age>25</base:has_age>
+    <base:has_email>dekatospemptosfoithths@mail.com</base:has_email>
+    <base:has_phone>567567567</base:has_phone>
+    <base:has_name>dekatospemptos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom7">
+    <base:room_department rdf:resource="http://www.uni/department4"/>
+    <base:room_capacity>110</base:room_capacity>
+    <base:room_name>aithousa 7</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/Department">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom3">
+    <base:room_department rdf:resource="http://www.uni/department2"/>
+    <base:room_capacity>140</base:room_capacity>
+    <base:room_name>aithousa 3</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/classroom10">
+    <base:room_department rdf:resource="http://www.uni/department5"/>
+    <base:room_capacity>170</base:room_capacity>
+    <base:room_name>aithousa 10</base:room_name>
+    <rdf:type rdf:resource="http://www.uni/Classroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/Professor">
+    <rdfs:subClassOf rdf:resource="http://www.uni/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson1">
+    <base:taught_by rdf:resource="http://www.uni/professor1"/>
+    <base:les_name>mathima 1</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/has_name">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.uni/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson5">
+    <base:taught_by rdf:resource="http://www.uni/professor5"/>
+    <base:les_name>mathima 5</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/room_capacity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.uni/Classroom"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/dep_city">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.uni/Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/department4">
+    <base:dep_city>Athina</base:dep_city>
+    <base:dep_name>Tmhma Athinwn</base:dep_name>
+    <rdf:type rdf:resource="http://www.uni/Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor2">
+    <base:teaches rdf:resource="http://www.uni/lesson2"/>
+    <base:member_of rdf:resource="http://www.uni/department2"/>
+    <base:has_age>53</base:has_age>
+    <base:has_email>deuteros@mail.com</base:has_email>
+    <base:has_phone>222222</base:has_phone>
+    <base:has_name>deuteros daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/lesson9">
+    <base:taught_by rdf:resource="http://www.uni/professor9"/>
+    <base:les_name>mathima 9</base:les_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/student1">
+    <base:member_of rdf:resource="http://www.uni/department1"/>
+    <base:has_age>21</base:has_age>
+    <base:has_email>prwtosfoithths@mail.com</base:has_email>
+    <base:has_phone>1111110</base:has_phone>
+    <base:has_name>prwtos foithths</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/professor6">
+    <base:teaches rdf:resource="http://www.uni/lesson6"/>
+    <base:member_of rdf:resource="http://www.uni/department6"/>
+    <base:has_age>48</base:has_age>
+    <base:has_email>ektos@mail.com</base:has_email>
+    <base:has_phone>666666</base:has_phone>
+    <base:has_name>ektos daskalos</base:has_name>
+    <rdf:type rdf:resource="http://www.uni/Professor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uni/Classroom">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>
